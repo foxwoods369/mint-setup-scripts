@@ -1,0 +1,1 @@
+# mint-setup-scripts
