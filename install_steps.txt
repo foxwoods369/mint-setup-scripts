@@ -1,0 +1,38 @@
+# install git
+# install vim using install_debian.sh
+# setup .vimrc & clone vim repo
+# install vundle (clone into .vim/bundle)
+# PluginInstall
+# install build-essential cmake python-dev
+# add ssh key to foxwoods.webfactional.com
+# clone depots from foxwoods.webfactional.com
+# install python-setuptools python-pip
+# install virtualenv
+# setup virtualenvs
+	# including postactivate/postdeactivate mods
+	# create script for this
+# install postgresql
+# install webmin for ease of use
+# setup dbs in postgres
+# update requirements files to upgrade Django
+# install libxslt-dev
+# install memcached
+# install docker
+# install calibre
+# install pyenv
+# install npm
+## set npm config to proper directory: https://docs.npmjs.com/getting-started/fixing-npm-permissions
+# install xdotool
+# install mozrepl for firefox
+# install foundation npm 
+# install xmind
+# install bibisco
+# install inkscape
+
+# install nvidia drivers
+# run nvidia-xconfig
+# install libdbus-glib-1-dev
+# pip install dbus-python
+
+App list:
+calibre git git-gui gitk build-essential cmake python-dev python3-dev chromium-browser docker.io python-setuptools python-pip postgresql-9.5 memcached libxslt-dev meld markdown tidy5 skype xdotool libdbus-glib-1-dev inkscape

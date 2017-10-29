@@ -1,0 +1,7 @@
+[user]
+	email = skyler@skylerdawson.com
+	name = Skyler Dawson
+[core]
+	editor = vim
+[pull]
+	rebase = true
