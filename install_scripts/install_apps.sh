@@ -5,10 +5,10 @@ sudo apt-get -y --force-yes upgrade
 
 sudo apt-get -y install \
 git git-gui gitk build-essential cmake python-dev python3-dev chromium-browser \
-docker.io python-setuptools python-pip libxslt-dev memcached meld markdown tidy5\
+docker.io python-setuptools python-pip libxslt-dev memcached meld markdown tidy5 \
 libdbus-glib-1-dev inkscape postgresql python-dbus python-dbus-dev rdesktop \
 zim apt-transport-https ca-certificates curl software-properties-common \
-xdotool 
+xdotool libauthen-pam-perl
 
 # install docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
