@@ -5,7 +5,8 @@ if [ -d ~/.pyenv ]; then
 	git pull
 else
 	git clone https://github.com/yyuu/pyenv.git ~/.pyenv
-	git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+	mkdir -p ~/.pyenv/plugins/pyenv-virtualenv
+	git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 fi
 
 source ~/.bashrc

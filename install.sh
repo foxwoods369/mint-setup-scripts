@@ -1,5 +1,5 @@
 cd dotfiles
-install_dotfiles.sh
+./install_dotfiles.sh
 cd ../install_scripts
 ./install_apps.sh
 ./install_themes.sh
