@@ -63,7 +63,7 @@ mkdir ~/bin
 # install xmind
 curl -L 'https://www.xmind.net/xmind/downloads/xmind-8-update8-linux.zip' --compressed > ~/Downloads/xmind-8.zip
 rm -rf ~/bin/xmind-app
-unzip ~/Downloads/xmind-8-update8-linux.zip -d ~/bin/xmind-app
+unzip ~/Downloads/xmind-8.zip -d ~/bin/xmind-app
 cat <<EOF > ~/bin/xmind
 #!/bin/bash
 cd /home/foxwoods/bin/xmind-app/XMind_amd64; ./XMind
