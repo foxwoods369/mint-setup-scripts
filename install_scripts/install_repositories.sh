@@ -8,5 +8,6 @@ mkdir -p ~/webdev/thirdparty/forks
 git clone foxwoods@foxwoods.webfactional.com:/home/foxwoods/git/design.git ~/webdev/design
 git clone foxwoods@foxwoods.webfactional.com:/home/foxwoods/git/leadpages.git ~/webdev/development/leadpages
 git clone foxwoods@foxwoods.webfactional.com:/home/foxwoods/git/mco.git ~/webdev/development/mco
+git clone foxwoods@foxwoods.webfactional.com:/home/foxwoods/git/scrapers.git ~/webdev/development/scrapers
 git clone foxwoods@foxwoods.webfactional.com:/home/foxwoods/git/skylerdawson.git ~/webdev/development/skylerdawson
 git clone foxwoods@foxwoods.webfactional.com:/home/foxwoods/git/writing.git ~/writing
