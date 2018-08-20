@@ -1,5 +1,3 @@
-#!/bin/bash
-
 sudo apt-mark hold virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
 sudo apt-get -y --force-yes update
 sudo apt-get -y --force-yes upgrade
@@ -16,15 +14,6 @@ g++ remmina apt-show-versions
 # install android studio dependencies
 sudo apt-get -y install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 
-add_apt_repository() {
-    for i in "$@"; do
-        grep -h "$i" /etc/apt/sources.list.d/* > /dev/null 2>&1
-        if [ $? -ne 0 ]; then
-            sudo add-apt-repository -y $i
-        fi
-    done
-}
-
 # install tidy
 sudo apt-get purge libtidy-0.99-0
 wget -nc -P ~/Downloads https://github.com/htacg/tidy-html5/releases/download/5.4.0/tidy-5.4.0-64bit.deb
@@ -33,7 +22,9 @@ sudo dpkg -i ~/Downloads/tidy-5.4.0-64bit.deb
 # install docker
 source /etc/os-release
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-add_apt_repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $UBUNTU_CODENAME stable"
+if ! grep -q "^deb .*docker" /etc/apt/sources.list /etc/apt/sources.list.d/*; then
+	sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $UBUNTU_CODENAME stable"
+fi
 sudo apt-get update
 sudo apt-get install docker-ce
 
