@@ -16,7 +16,7 @@ https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
 sudo mv PowerlineSymbols.otf /usr/share/fonts/
 sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/
 sudo cp "DejaVu Sans Mono for Powerline.ttf" /usr/share/fonts/
-sudo fc-fache -vf
+sudo fc-cache -vf
 
 # install markdown preview
 npm -g install instant-markdown-d
