@@ -9,7 +9,7 @@ libdbus-glib-1-dev inkscape postgresql python-dbus python-dbus-dev rdesktop \
 zim apt-transport-https ca-certificates curl software-properties-common \
 xdotool libauthen-pam-perl default-jdk libncursesw5-dev libreadline-dev \
 libssl-dev libgdbm-dev libc6-dev libsqlite3-dev tk-dev libbz2-dev libz-dev liblzma-dev \
-g++ remmina apt-show-versions
+g++ remmina apt-show-versions libpq-dev
 
 # install android studio dependencies
 sudo apt-get -y install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
