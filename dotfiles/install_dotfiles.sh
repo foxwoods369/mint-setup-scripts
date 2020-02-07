@@ -11,17 +11,11 @@ cat <<EOF >> ~/.bashrc
 if [ -f ~/.colors ]; then
 	. ~/.colors
 fi
-EOF
 
-if [ -f ~/.profile_orig ]; then
-    cp ~/.profile_orig ~/.profile
-fi
-
-cp ~/.profile ~/.profile_orig 
-cat <<EOF >> ~/.profile
 export PYENV_ROOT="\$HOME/.pyenv"
 export NPM_CONFIG_PREFIX="\$HOME/.npm-global"
 export PATH="\$NPM_CONFIG_PREFIX/bin:\$PYENV_ROOT/bin:\$PATH"
 eval "\$(pyenv init -)"
 eval "\$(pyenv virtualenv-init -)"
+eval "\$(direnv hook bash)"
 EOF
