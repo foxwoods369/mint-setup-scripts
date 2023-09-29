@@ -13,7 +13,9 @@ source ~/.bashrc
 source ~/.profile
 
 pyenv install 2.7-dev
-pyenv install 3.6-dev
+pyenv install 3.11.5
 pyenv rehash
+
+pyenv global 3.11.5
 
 pip install wheel
